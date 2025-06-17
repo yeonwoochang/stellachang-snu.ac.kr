@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" rel="stylesheet" />
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>도시인의 저널리즘 생활</title>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.2/p5.js"></script>
+  <link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" rel="stylesheet" />
   <style>
     body {
       font-family: 'Pretendard', sans-serif;
@@ -171,13 +171,13 @@ function showResult() {
   resultDiv.classList.remove('hidden');
   let resultText = '';
   if (totalScore <= 11) {
-    resultText = `🏠 <strong>적응형</strong><br>실용성과 효율을 중시하며, 도시에서 살아남는 법을 모색합니다.<br><br>👉 <a href="https://25spring.upcomingnews.net/" target="_blank">다음 링크를 통해 확인해보세요!</a>`;
+    resultText = `🏠 <strong>적응형</strong><br>실용성과 효율을 중시하며, 도시에서 살아남는 법을 모색합니다.<br><br><strong>당신이 재밌어 할 기사는?</strong><br>👉 <a href="https://25spring.upcomingnews.net/" target="_blank">다음 링크를 통해 확인해보세요!</a>`;
   } else if (totalScore <= 15) {
-    resultText = `☕️ <strong>탐색형</strong><br>복잡한 도시 속 자신만의 쉼터를 찾아 떠나는 타입입니다.<br><br>👉 <a href="https://25spring.upcomingnews.net/" target="_blank">다음 링크를 통해 확인해보세요!</a>`;
+    resultText = `☕️ <strong>탐색형</strong><br>복잡한 도시 속 자신만의 쉼터를 찾아 떠나는 타입입니다.<br><br><strong>당신이 재밌어 할 기사는?</strong><br>👉 <a href="https://25spring.upcomingnews.net/" target="_blank">다음 링크를 통해 확인해보세요!</a>`;
   } else if (totalScore <= 21) {
-    resultText = `🌇 <strong>중재형</strong><br>도시인들의 다양한 입장을 조율하며 균형을 추구하는 타입입니다.<br><br>👉 <a href="https://25spring.upcomingnews.net/" target="_blank">다음 링크를 통해 확인해보세요!</a>`;
+    resultText = `🌇 <strong>중재형</strong><br>도시인들의 다양한 입장을 조율하며 균형을 추구하는 타입입니다.<br><br><strong>당신이 재밌어 할 기사는?</strong><br>👉 <a href="https://25spring.upcomingnews.net/" target="_blank">다음 링크를 통해 확인해보세요!</a>`;
   } else {
-    resultText = `🛝 <strong>조화형</strong><br>공공성과 공동체 가치를 중시하며 모두가 함께 살아가는 도시를 꿈꿉니다.<br><br>👉 <a href="https://25spring.upcomingnews.net/" target="_blank">다음 링크를 통해 확인해보세요!</a>`;
+    resultText = `🛝 <strong>조화형</strong><br>공공성과 공동체 가치를 중시하며 모두가 함께 살아가는 도시를 꿈꿉니다.<br><br><strong>당신이 재밌어 할 기사는?</strong><br>👉 <a href="https://25spring.upcomingnews.net/" target="_blank">다음 링크를 통해 확인해보세요!</a>`;
   }
   resultDiv.innerHTML = `<p>${resultText}</p>`;
 }
