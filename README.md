@@ -1,1 +1,1 @@
-# stellachang-snu.ac.kr
+# urban_journalism_type
